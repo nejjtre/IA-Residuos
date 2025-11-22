@@ -6,25 +6,36 @@ body {
     background:#1e3d59;
     color: #333;
 }
-
-header.header {
+.header {
     position: relative;
-    height: 250px; 
+    padding: 40px 20px;
+    color: white;
+    display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
+    min-height: 250px;
     overflow: hidden;
+    text-align: center;
 }
 
-.header img{
-    position: absolute;
+/* Imagen detrás del texto */
+.header img {
+        position: absolute;
     top: 0;
     left: 0;
-    width: 100%;      
+    width: 100%;
     height: 100%;
-    object-fit: cover; 
-    opacity: 0.9;    
+    object-fit: cover;
+    opacity: 0.45;   /* <--- Solo la imagen es transparente */
     z-index: 0; 
 }
+.header h1,
+.header p {
+    position: relative;
+    z-index: 1;      /* Esto evita que el texto herede transparencia */
+    margin: 0;
+}
+
 
 /* === CONTENEDORES DE SECCIÓN === */
 .section {
@@ -90,22 +101,5 @@ footer.footer {
         max-width: 100%;
         margin-top: 1.5rem;
     }
-
-    header.header h1 {
-        font-size: 1.7rem;
-
-    }
-    header.header p {
-        font-size: 1.2rem;
-
-    }
-    .header h1, .header p {
-    position: relative;
-    z-index: 1;    
-    color: white;
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;  
-    color:whitesmoke;
-}
      
 }
