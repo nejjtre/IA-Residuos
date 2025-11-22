@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+main {
+  padding: 2em 1em;
+}
+section {
+  margin-bottom: 3em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.boton {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 900px;
+    margin: auto;
+  }
+  .funcionamiento, .beneficios {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+  .funcionamiento img, .beneficios img {
+    width: 50%;
+  }
+}
